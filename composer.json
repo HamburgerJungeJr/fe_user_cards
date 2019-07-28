@@ -1,0 +1,54 @@
+{
+    "name": "hamburgerjungejr/fe_user_cards",
+    "description": "Fe_User_Cards is a Typo3 extension which displays Fe_Users in the Frontend.",
+    "keywords": [
+      "typo3",
+      "form",
+      "frontend",
+      "registration",
+      "profile",
+      "sr_feuser_register",
+      "fe_users"
+    ],
+    "homepage": "https://github.com/hamburgerjungejr/fe_user_cards.git",
+    "authors": [
+        {
+            "name": "Jannik Heuer",
+            "email": "hamburgerjungejr@gmx.de"
+        },
+        {
+            "name": "Oliver Kurzer",
+            "email": "phperix@web.de"
+        }
+    ],
+    "type": "typo3-cms-extension",
+    "license": "GPL-3.0-or-later",
+    "minimum-stability":"stable",
+    "require": {
+      "typo3/cms-core": ">=8.7.0 <9.6.0"
+    },
+    "require-dev": {
+      "typo3/cms-extbase": "^8.7.10"
+    },
+    "autoload": {
+      "psr-4": {
+        "HamburgerJungeJr\\FeUserCards\\": "Classes/"
+      }
+    },
+    "config": {
+      "vendor-dir": ".Build/vendor",
+      "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+      "post-autoload-dump": [
+        "mkdir -p .Build/Web/typo3conf/ext/",
+        "[ -L .Build/Web/typo3conf/ext/fe_user_cards ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/fe_user_cards"
+      ]
+    },
+    "extra": {
+      "typo3/cms": {
+        "cms-package-dir": "{$vendor-dir}/typo3/cms",
+        "web-dir": ".Build/Web"
+      }
+    }
+  }
