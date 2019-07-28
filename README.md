@@ -32,3 +32,5 @@ The Typo3 guidelines say that stable plugins have to be well supported and I wil
 ### Is it stable
 I hope so ;)
 
+## Thanks
+Thanks to [phperix]( https://github.com/phperix ) for creating composer support
