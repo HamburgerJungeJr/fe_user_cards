@@ -9,12 +9,12 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => '',
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '1.4.0',
+    'version' => '1.4.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.0.0-9.9.99',
-            'fluid' => '8.0.0-8.9.99',
-            'vhs' => '4.3.0-4.3.99'
+            'typo3' => '10.0.0-10.9.99',
+            'fluid' => '8.0.0-10.9.99',
+            'vhs' => '4.3.0-6.9.99'
         ]
     ],
     'autoload' => [
